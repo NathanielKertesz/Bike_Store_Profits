@@ -1,8 +1,8 @@
 # Bike_Store_Profits
 
-**Tools Used: Python**
+**Tools Used: MySQL, Tableau**
 
-**Data Used:** [Bike Store Relational Database]([https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database])
+**Data Used:** [Bike Store Relational Database](https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database)
 
 **Business Insights:** 
 
