@@ -1,3 +1,4 @@
+#Need to join order, product, category, and store tables to find revenue and gross profit by store
 SELECT o.order_id, p.cost_price, oi.list_price, oi.quantity, c.category_name, o.order_date, s.store_id, (oi.list_price * oi.quantity) AS total_sale, 
 (p.cost_price * oi.quantity) AS total_cost,(oi.list_price * oi.quantity)-(p.cost_price * oi.quantity) AS profit
 FROM order_items oi 
@@ -6,6 +7,7 @@ LEFT JOIN products p on p.product_id= oi.product_id
 LEFT JOIN categories c on c.category_id = p.category_id
 LEFT JOIN stores s on s.store_id = o.store_id
 
+#Must join operating expenses data (rent and employee payouts)
 UNION ALL
 
 SELECT null as total_cost, null as total_sale,
